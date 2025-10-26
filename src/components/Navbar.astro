@@ -1,0 +1,57 @@
+<div class="h-[20vh] w-full flex flex-col py-5">
+    <div class="flex flex-col items-center">
+        <h1 class="text-6xl font-extralight">Eucalyptus</h1>
+        <span class="text-lg font-light mt-2">Cocina culinaria</span>
+    </div>
+    <!-- <div class="flex justify-center items-center p-2">
+        <ul class="flex space-x-30 font-light text-2xl">
+            <a href="#carta"><li>Carta</li></a>
+            <a href="#especiales"><li>Especiales</li></a>
+            <a href="#acerca"><li>Acerca</li></a>
+            <a href="#horarios"><li>Horarios & Reservas</li></a>
+            <a href="#ubicacion"><li>Ubicacion</li></a>
+        </ul>
+    </div> -->
+</div>
+
+<nav class="relative">
+    <div class="mx-auto">
+      <div class="relative text-2xl sm:h-10 h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" command="--toggle" commandfor="mobile-menu" class="hover:cursor-pointer relative inline-flex items-center justify-center rounded-md p-2">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-10 in-aria-expanded:hidden">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="h-10 not-in-aria-expanded:hidden">
+              <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:justify-center">
+          <div class="hidden sm:ml-6 lg:block">
+            <div class="flex space-x-15">
+              <a href="#" class="font-light ps-5">Carta</a>
+              <a href="#" class="font-light ps-5">Especiales</a>
+              <a href="#" class="font-light ps-5">Acerca</a>
+              <a href="#" class="font-light ps-5">Horarios & Reservas</a>
+              <a href="#" class="font-light ps-5">Ubicacion</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <el-disclosure id="mobile-menu" hidden class="block lg:hidden">
+      <div class="text-xl font-light space-y-5 px-2 pt-2 pb-3">
+        <a href="#" class="block">Especiales</a>
+        <a href="#" class="block">Especiales</a>
+        <a href="#" class="block">Acerca</a>
+        <a href="#" class="block">Horarios & Reservas</a>
+        <a href="#" class="block">Ubicacion</a>
+      </div>
+    </el-disclosure>
+  </nav>
+  
