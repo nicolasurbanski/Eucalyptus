@@ -1,3 +1,10 @@
+---
+import { Image } from "astro:assets";
+import dish1 from '../images/dishes/dish1.jpg'
+import dessert1 from '../images/desserts/dessert2.jpg'
+import dessert2 from '../images/desserts/dessert3.jpg'
+import dish2 from '../images/dishes/dish3.jpg'
+---
 <section id="horarios" class="h-screen bg-gray-300/50 relative">
         <h1 class="sm:p-12 py-10 sm:text-5xl text-4xl text-center sm:text-start font-extralight">Horarios & Reservas</h1>
         <div class="w-full flex flex-row items-center justify-center sm:space-x-30 space-x-10 sm:text-3xl text-xl text-center font-light">
@@ -16,30 +23,26 @@
         <div class="flex items-center justify-center sm:p-12 p-10 text-3xl text-center"><h1 class="font-extralight border-b-2 border-gray-500">Reservas al <span class="block font-light text-2xl mt-2">2972594455</span></h1 >
         <div class="grid grid-flow-row sm:grid-cols-4 grid-cols-2 absolute bottom-0 border-t-2 border-b-2 border-gray-500">
             <div class="w-full sm:h-[35vh] h-[20vh]">
-                <img
+                <Image src={ dish2 }
                   class="w-full h-full object-cover"
-                  src="../src/images/dishes/dish3.jpg"
                   alt="postre 1"
                 />
               </div>
               <div class="w-full sm:h-[35vh] h-[20vh]">
-                <img
+                <Image src={ dessert2 }
                   class="w-full h-full object-cover"
-                  src="../src/images/desserts/dessert2.jpg"
                   alt="postre 1"
                 />
               </div>
               <div class="w-full sm:h-[35vh] h-[20vh]">
-                <img
+                <Image src={ dessert1 }
                   class="w-full h-full object-cover"
-                  src="../src/images/desserts/dessert3.jpg"
                   alt="postre 1"
                 />
               </div>
               <div class="w-full sm:h-[35vh] h-[20vh]">
-                <img
+                <Image src={ dish1 }
                   class="w-full h-full object-cover"
-                  src="../src/images/dishes/dish1.jpg"
                   alt="postre 1"
                 />
               </div>

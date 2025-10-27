@@ -7,12 +7,16 @@ import Location from '../components/Location.astro';
 import Specials from '../components/Specials.astro'
 import Dishes from '../components/Dishes.astro';
 import Layout from '../layouts/Layout.astro';
+import hero from '../images/dishes/hero.jpg';
+import { Image } from 'astro:assets';
 ---
 
-<Layout>
-	<Navbar/>
-	<div class="w-full h-[80vh] bg-[url('../src/images/dishes/hero.jpg')] bg-cover bg-bottom">
-	</div>
+<Layout title="Eucalyptus" description="Sabores autenticos">
+	<Navbar client:idle/>
+	<link rel="preload" as="image" href="../images/dishes/hero.jpg" />
+	<div class="w-full h-[71vh] relative">
+		<Image src={ hero } alt="Delicious dishes" class="object-cover object-bottom w-full h-full" />
+	  </div>
 	<Dishes />
 	<Specials />
 	<About />

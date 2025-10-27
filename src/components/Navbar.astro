@@ -20,7 +20,7 @@
     id="menu-btn"
     type="button"
     aria-label="Toggle menu"
-    class="hover:cursor-pointer fixed bottom-6 left-6 z-30 p-3 rounded-full bg-black text-white shadow-lg sm:hidden"
+    class="hover:cursor-pointer fixed bottom-6 right-6 z-30 p-3 rounded-full bg-black text-white shadow-lg sm:hidden"
   >
     <svg
       id="icon-open"
@@ -64,7 +64,7 @@
 </nav>
 
 
-<script>
+<script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("menu-btn");
     const menu = document.getElementById("mobile-menu");
