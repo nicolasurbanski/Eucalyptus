@@ -1,19 +1,18 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import About from '../components/About.astro';
-import Hero from '../components/Hero.astro';
 import Horarios from '../components/Horarios.astro'
 import Footer from '../components/Footer.astro'
 import Location from '../components/Location.astro';
 import Specials from '../components/Specials.astro'
 import Dishes from '../components/Dishes.astro';
-import Desserts from '../components/Desserts.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
 	<Navbar/>
-	<Hero />
+	<div class="w-full h-[80vh] bg-[url('../src/images/dishes/hero.jpg')] bg-cover bg-bottom">
+	</div>
 	<Dishes />
 	<Specials />
 	<About />
